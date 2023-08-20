@@ -1,7 +1,5 @@
 import { createContext } from 'react';
 import './App.css';
-import Component3 from './Component3';
-import Component2 from './Component2';
 import Component1 from './Component1';
 
 let FirstNameContext = createContext();
@@ -12,16 +10,14 @@ function App() {
   let LastName = 'Hales';
   return (
     <div className="App">
-      <Component1/>
       <FirstNameContext.Provider value={FirstName}>
-        <LastNameContext.Provider value={LastName}> 
-          <Component3 />
-          <Component2 />
+        <LastNameContext.Provider value={LastName}>
+          <Component1 />
         </LastNameContext.Provider>
       </FirstNameContext.Provider>
     </div>
   );
 }
 
-export { FirstNameContext,LastNameContext };
+export { FirstNameContext, LastNameContext };
 export default App;

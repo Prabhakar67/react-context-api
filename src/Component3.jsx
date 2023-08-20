@@ -7,7 +7,7 @@ function Component3(props) {
 
     return (
         <div>
-            <h1>First Name is {FirstName} Last Name is {LastName}</h1>
+            <h2>This is FirstName and LastName in Comp3: {FirstName} {LastName}</h2>
         </div>
     );
 }
